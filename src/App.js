@@ -1,7 +1,7 @@
 import React from 'react'
-import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import './css/App.css'
 import Navbase from './components/NavBase.js'
+import './css/bootstrap.css'
 
 function App() {
   return (
