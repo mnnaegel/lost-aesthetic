@@ -4,3 +4,8 @@
     font-weight: 400;
     color: #7f7f7f;
   }
+
+  @media (min-width: 1400px) { 
+    #navbar-spacing{
+      margin-left: auto;
+  }}

@@ -1,0 +1,30 @@
+image {
+    transition: 2s ease;
+}
+
+#stretch-img {
+    width: 775px;
+    height: 660px;
+    object-fit: fill;
+    overflow: hidden;
+}
+
+.image-hover:hover {
+    opacity: 0.3;
+    transition: 0.5s ease;
+}
+
+.parent {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+.child {
+    display: flex;
+    align-items: center;
+}
+
+.image-text {
+    position: absolute;
+}
