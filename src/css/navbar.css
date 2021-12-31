@@ -3,6 +3,7 @@
     font-size: 12px;
     font-weight: 400;
     color: #7f7f7f;
+    text-transform: uppercase;
   }
 
   @media (min-width: 1400px) { 
