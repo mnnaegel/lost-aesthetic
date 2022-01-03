@@ -20,11 +20,11 @@ const NavBase = () => {
                     <Nav className="container-fluid">
                         <Nav.Link href="#search">SEARCH</Nav.Link>
                         <NavDropdown title="SHOP" id="basic-nav-dropdown">
-                            <NavDropdown.Item className="navbar-parent" href="#action/3.1">ACC1</NavDropdown.Item>
-                            <NavDropdown.Item className="navbar-parent" href="#action/3.2">ACC2</NavDropdown.Item>
-                            <NavDropdown.Item className="navbar-parent" href="#action/3.3">ACC3</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.1">ACC1</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.2">ACC2</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.3">ACC3</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item className="navbar-parent" href="#action/3.4">ALL</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.4">ALL</NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link id="navbar-spacing" href="#account">ACCOUNT</Nav.Link>
                         <Nav.Link href="#bag">BAG</Nav.Link>

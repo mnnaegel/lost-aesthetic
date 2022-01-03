@@ -1,17 +1,26 @@
 import React from 'react'
 import './css/App.css'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Navbase from './components/NavBase.js'
-import ClothingGrid from './components/ClothingGrid.js'
 import Footer from './components/Footer.js'
+import ClothingGrid from './components/ClothingGrid.js'
+import Collections from './components/Collections.js'
 import './css/bootstrap.css'
 
 function App() {
   return (
-    <div>
+    <Router>
       <Navbase />
-      <ClothingGrid />
+      <Switch>
+        <Route exact path="/">
+          <ClothingGrid />
+        </Route>
+        <Route exact path="/collections">
+          <Collections />
+        </Route>
+      </Switch>
       <Footer />
-    </div>
+    </Router>
   );
 }
 

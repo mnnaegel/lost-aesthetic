@@ -1,5 +1,14 @@
 .img-holder {position: relative; display: inline-block;}
-.img-holder img {display: block; opacity: 1; transition: 0.5s ease;}
+.img-holder img {display: block; opacity: 1; transition: 0.5s ease; object-fit: cover; height:58.1rem; width:47.2rem}
 .img-holder:hover img {opacity: 0.3;}
 .img-holder p {position: absolute; opacity: 0; top: 50%; left: 0; right: 0; transform: translate(0, -50%); text-align: center; color: rgb(0, 0, 0)}
 .img-holder:hover p {opacity: 1; transition: 0.5s ease;}
+
+.col-padding{
+    padding: 0 0 20px 0;
+}
+
+.hover-text{
+    font-weight: bold;
+    font-size: 36px;
+}
