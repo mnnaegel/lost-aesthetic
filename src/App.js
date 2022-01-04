@@ -7,18 +7,27 @@ import ClothingGrid from './components/ClothingGrid.js'
 import Collections from './components/Collections.js'
 import './css/bootstrap.css'
 
-// //Import the mongoose module
-// var mongoose = require('mongoose');
+// const express = require("express");
+// const mongoose = require("mongoose");
+// const Routes = require("../backend/routes")
 
-// //Set up default mongoose connection
-// var mongoDB = 'mongodb://127.0.0.1/my_database';
-// mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
+// const app = express();
 
-// //Get the default connection
-// var db = mongoose.connection;
+// app.use(express.json());
 
-// //Bind connection to error event (to get notification of connection errors)
-// db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+// mongoose.connect('mongodb+srv://mnnaegel:HNeg7uPapsdVy56@cluster0.4nr9a.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
+
+// const db = mongoose.connection;
+// db.on("error", console.error.bind(console, "connection error: "));
+// db.once("open", function () {
+//   console.log("Connected successfully");
+// });
+
+// app.use(Routes);
+
+app.listen(3000, () => {
+  console.log("Server is running at port 3000");
+});
 
 
 function App() {
