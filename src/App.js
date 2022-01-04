@@ -25,15 +25,16 @@ import './css/bootstrap.css'
 
 // app.use(Routes);
 
-app.listen(3000, () => {
-  console.log("Server is running at port 3000");
-});
+// app.listen(3000, () => {
+//   console.log("Server is running at port 3000");
+// });
 
 
-function App() {
+function App({count}) {
   return (
     <Router>
       <Navbase />
+      <p>{count}</p>
       <Switch>
         <Route exact path="/">
           <ClothingGrid />
