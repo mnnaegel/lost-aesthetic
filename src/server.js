@@ -5,6 +5,7 @@ const Router = require("./routes")
 const app = express();
 
 app.use(express.json());
+
 mongoose.connect('mongodb+srv://mnnaegel:HNeg7uPapsdVy56@cluster0.4nr9a.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
 
 const db = mongoose.connection;

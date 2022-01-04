@@ -4,11 +4,13 @@ const app = express();
 
 app.post("/add_product", async (request, response) => {
     const product = new productModel(request.body);
-  
+    
     try {
       await product.save();
-      response.send(product);
+      console.log(product)
+      response.send(request.body);
     } catch (error) {
+      console.log(request.body)
       response.status(500).send(error);
     }
 });
